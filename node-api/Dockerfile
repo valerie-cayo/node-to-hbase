@@ -3,6 +3,8 @@ FROM joeferner/node-java
 # Create app directory
 WORKDIR /usr/src/app
 
+RUN mkdir -p /usr/src/app/logs
+
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
