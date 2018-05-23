@@ -1,0 +1,10 @@
+{
+    "apps" : [{
+        "exec_mode" : "cluster",
+        "instances" : 1,
+        "name"      : "nodejs-api",
+        "node_args" : ["--max-old-space-size=2048"],
+        "script"    : "./server.js",
+        "watch": ["app", "config", "main.js", "utils"]
+    }]
+}

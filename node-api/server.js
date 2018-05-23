@@ -5,6 +5,7 @@
 
 const config = require('./config/config.js');
 const databaseConnection = require('./utils/database-connection.js');
+const phoenixConnector = require('./utils/phoenix-conn.js');
 const express = require('express');
 const logger = require('./config/logger.config.js');
 const os = require('os');

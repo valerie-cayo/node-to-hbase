@@ -8,10 +8,9 @@ const express = require('express');
  * which is an instance of the expressjs router
  *
  * @param route is the express router
- * @param database the database representation
  * @param createError the createError function to create a new error
  */
-module.exports = (database, createError) => {
+module.exports = (createError) => {
 
     const Model = require('./todos.model.js');
     const Controller = require('./todos.controller.js');
@@ -22,7 +21,7 @@ module.exports = (database, createError) => {
     route.use(bodyParser.json());
 
     /* Instantiate the services */
-    const model = new Model(database, createError);
+    const model = new Model(createError);
 
     /* Instantiate the controllers */
     const controller = new Controller(model, createError);

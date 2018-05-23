@@ -38,7 +38,7 @@ module.exports = function(route, controller) {
             .catch(next);
     });
 
-    app.get('/', (req, res) => {
+    route.get('/test', (req, res) => {
         res.send('Hello world\n');
     });
 
