@@ -14,7 +14,7 @@ if (!jinst.isJvmCreated()) {
 
 var config = {
   // Required
-  git branch
+  url: 'jdbc:phoenix:thin:url=http://queryserver-1',
 
   // Optional
   // drivername: 'my.jdbc.DriverName',
